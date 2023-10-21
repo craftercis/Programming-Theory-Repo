@@ -3442,6 +3442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deluxe Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8949572339990068618, guid: d03025729f4eace40a90a801458c1312, type: 3}
+      propertyPath: bounceForce
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03025729f4eace40a90a801458c1312, type: 3}
 --- !u!1 &1064673332
@@ -6505,6 +6509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2176392451775974176, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}
+      propertyPath: speed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 2071022485307240555, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -6552,6 +6560,14 @@ PrefabInstance:
     - target: {fileID: 2103785008649616189, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618497957295947143, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618497957295947143, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea1203d3ad8ead84a8bbec91a3d1343d, type: 3}

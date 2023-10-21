@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4047982918562412937}
   m_Layer: 0
   m_Name: Hard brick
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
