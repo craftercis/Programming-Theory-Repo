@@ -29,9 +29,10 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Brick"))
+        Brick brick = collision.gameObject.GetComponent<Brick>();
+        if (brick != null)
         {
-            collision.gameObject.SetActive(false);
+            brick.RemoveHealth();
         }
     }
 }
