@@ -10,18 +10,13 @@ public class Player : MonoBehaviour
     private float bottomBorder = -3f;
     private float maxBounceAngle = 75.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     public virtual void Update()
     {
         MoveHorizontal();
     }
 
+    // ABSTRACTION
     public void MoveHorizontal()
     {
         float input = Input.GetAxis("Horizontal");
@@ -29,18 +24,12 @@ public class Player : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x += input * speed * Time.deltaTime;
 
-        if (pos.x > maxMovementX)
-        {
-            pos.x = maxMovementX;
-        }
-        else if (pos.x < -maxMovementX)
-        {
-            pos.x = -maxMovementX;
-        }
+        pos.x = Mathf.Clamp(pos.x, -maxMovementX, maxMovementX);
 
         transform.position = pos;
     }
 
+    // ABSTRACTION
     protected void MoveVertical()
     {
         float input = Input.GetAxis("Vertical");
